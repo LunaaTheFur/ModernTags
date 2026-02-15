@@ -1,0 +1,28 @@
+name: "ModernTags"
+main: "com.github.groundbreakingmc.moderntags.ModernTags"
+version: "1.0.0"
+api-version: "1.20"
+
+author: "GroundbreakingMC"
+website: "https://github.com/groundbreakingmc"
+
+softdepend: [ "PlaceholderAPI", "Vault" ]
+libraries: [ "org.spongepowered:configurate-yaml:4.2.0" ]
+
+commands:
+  moderntags:
+    description: "ModernTags reload command"
+    permission: moderntags.reload
+
+permissions:
+  moderntags.reload:
+    description: "Allows to reload the plugin"
+    default: op
+
+  moderntags.see.own:
+    description: "Allows to see own tag"
+    default: false
+
+  moderntags.see.other:
+    description: "Allows to see other player tags"
+    default: true
